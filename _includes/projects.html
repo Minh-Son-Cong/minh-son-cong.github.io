@@ -1,29 +1,29 @@
 <div class="user-details">
-  <h1> Featured Projects </h1>
+  <h2 class="section-title" data-i18n="projects.title">Projets</h2>
 </div>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="mountains" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
+    <img alt="Infrastructure réseau et déploiement" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
   </div>
   <div class="contents">
-    <h3> Project Title </h3>
+    <h3 data-i18n="projects.p1.title">Infrastructure &amp; Déploiement Conteneurisé</h3>
     <ul>
-      <li> Featured Skills</li>
+      <li data-i18n="projects.p1.stack">Docker · Linux · Nginx · SSH</li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <p data-i18n="projects.p1.desc">Mise en place et sécurisation d'environnements applicatifs multi-services avec Docker, reverse proxy Nginx et automatisation du déploiement sous Linux.</p>
+    <a class="project-link" target="_blank" rel="noopener noreferrer" href="https://github.com/{{ site.github_username }}" data-i18n="projects.cta">Voir sur GitHub</a>
   </div>
 </div>
 <div class="user-projects">
   <div class="images-left">
-    <img alt="mountains" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
+    <img alt="Application web communicante et sécurisée" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
   </div>
   <div class="contents-right">
-    <h3> Project Title </h3>
+    <h3 data-i18n="projects.p2.title">Application Web &amp; API Sécurisée</h3>
     <ul>
-      <li> Featured Skills</li>
+      <li data-i18n="projects.p2.stack">Python · JavaScript · PostgreSQL · Git</li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <p data-i18n="projects.p2.desc">Conception d'une application client-serveur avec authentification, gestion des droits et persistance des données dans le cadre du parcours DACS.</p>
+    <a class="project-link" target="_blank" rel="noopener noreferrer" href="https://github.com/{{ site.github_username }}" data-i18n="projects.cta">Voir sur GitHub</a>
   </div>
 </div>
