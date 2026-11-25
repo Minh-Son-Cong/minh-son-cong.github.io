@@ -1,0 +1,34 @@
+---
+layout: page
+title: Minh-Son CONG | Mon CV
+permalink: /cv/
+---
+
+<section class="cv-hero">
+  <div class="cv-hero-inner">
+    <h1 data-i18n="cv.title">Mon CV</h1>
+    <p data-i18n="cv.subtitle">Consultez mon curriculum vitae en ligne ou téléchargez-le directement au format PDF.</p>
+
+    <div class="cv-options">
+      <a class="hero-btn hero-btn-primary" href="{{ site.cv_path | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        <span data-i18n="cv.view">Consulter mon CV</span>
+      </a>
+      <a class="hero-btn hero-btn-outline" href="{{ site.cv_path | prepend: site.baseurl }}" download="CV_Minh-Son_CONG.pdf">
+        <i class="fa fa-download" aria-hidden="true"></i>
+        <span data-i18n="cv.download">Télécharger mon CV</span>
+      </a>
+    </div>
+
+    <a class="cv-back-link" href="{{ "/" | prepend: site.baseurl }}">
+      <i class="fa fa-arrow-left" aria-hidden="true"></i>
+      <span data-i18n="cv.back">Retour au portfolio</span>
+    </a>
+  </div>
+</section>
+
+<section class="site-section cv-preview-section">
+  <div class="cv-preview-box">
+    <iframe class="cv-preview-frame" src="{{ site.cv_path | prepend: site.baseurl }}#view=FitH" title="CV Minh-Son CONG"></iframe>
+  </div>
+</section>

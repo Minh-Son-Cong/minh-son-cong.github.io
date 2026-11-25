@@ -1,9 +1,12 @@
 /* sweetScroll load, particles.js, navbar & FR/EN i18n */
 document.addEventListener("DOMContentLoaded", function () {
-  new SweetScroll({
-    offset: -64
-  });
+  if (typeof SweetScroll === "function") {
+    new SweetScroll({
+      offset: -64
+    });
+  }
 
+  if (document.getElementById("particles-js") && typeof particlesJS === "function") {
   particlesJS('particles-js', {
     "particles": {
       "number": {
@@ -115,6 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     "retina_detect": true
   });
+  }
 
   var translations = {
     fr: {
@@ -189,6 +193,11 @@ document.addEventListener("DOMContentLoaded", function () {
       "contact.mail.label": "Mail",
       "contact.git.label": "Git (GitLab Univ. Lille)",
       "contact.linkedin.label": "LinkedIn",
+      "cv.title": "Mon CV",
+      "cv.subtitle": "Consultez mon curriculum vitae en ligne ou téléchargez-le directement au format PDF.",
+      "cv.view": "Consulter mon CV",
+      "cv.download": "Télécharger mon CV",
+      "cv.back": "Retour au portfolio",
       "footer.built": "Propulsé par Jekyll · Thème"
     },
     en: {
@@ -263,6 +272,11 @@ document.addEventListener("DOMContentLoaded", function () {
       "contact.mail.label": "Email",
       "contact.git.label": "Git (Univ. Lille GitLab)",
       "contact.linkedin.label": "LinkedIn",
+      "cv.title": "My Resume",
+      "cv.subtitle": "View my resume online or download it directly as a PDF.",
+      "cv.view": "View my Resume",
+      "cv.download": "Download my Resume",
+      "cv.back": "Back to portfolio",
       "footer.built": "Built with Jekyll · Theme"
     }
   };

@@ -1,6 +1,14 @@
+{% assign is_home = false %}
+{% if page.url == "/" or page.url == "/index.html" %}
+  {% assign is_home = true %}
+{% endif %}
+{% assign nav_prefix = "" %}
+{% unless is_home %}
+  {% assign nav_prefix = "/" | prepend: site.baseurl %}
+{% endunless %}
 <nav class="navbar" aria-label="Navigation principale">
   <div class="navbar-container">
-    <a class="navbar-brand" href="#particles-js" data-scroll>{{ site.username }}</a>
+    <a class="navbar-brand" href="{% if is_home %}#particles-js{% else %}{{ "/" | prepend: site.baseurl }}{% endif %}" {% if is_home %}data-scroll{% endif %}>{{ site.username }}</a>
 
     <button class="navbar-toggle" id="navbar-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navbar-menu">
       <i class="fa fa-bars" aria-hidden="true"></i>
@@ -8,12 +16,12 @@
 
     <div class="navbar-menu" id="navbar-menu">
       <ul class="navbar-links">
-        <li><a class="nav-link" href="#about" data-scroll data-i18n="nav.about">À propos</a></li>
-        <li><a class="nav-link" href="#parcours" data-scroll data-i18n="nav.parcours">Parcours</a></li>
-        <li><a class="nav-link" href="#skills" data-scroll data-i18n="nav.skills">Compétences</a></li>
-        <li><a class="nav-link" href="#projects" data-scroll data-i18n="nav.projects">Projets</a></li>
-        <li><a class="nav-link" href="#interests" data-scroll data-i18n="nav.interests">Centres d'intérêt</a></li>
-        <li><a class="nav-link" href="#contact" data-scroll data-i18n="nav.contact">Contact</a></li>
+        <li><a class="nav-link" href="{{ nav_prefix }}#about" {% if is_home %}data-scroll{% endif %} data-i18n="nav.about">À propos</a></li>
+        <li><a class="nav-link" href="{{ nav_prefix }}#parcours" {% if is_home %}data-scroll{% endif %} data-i18n="nav.parcours">Parcours</a></li>
+        <li><a class="nav-link" href="{{ nav_prefix }}#skills" {% if is_home %}data-scroll{% endif %} data-i18n="nav.skills">Compétences</a></li>
+        <li><a class="nav-link" href="{{ nav_prefix }}#projects" {% if is_home %}data-scroll{% endif %} data-i18n="nav.projects">Projets</a></li>
+        <li><a class="nav-link" href="{{ nav_prefix }}#interests" {% if is_home %}data-scroll{% endif %} data-i18n="nav.interests">Centres d'intérêt</a></li>
+        <li><a class="nav-link" href="{{ nav_prefix }}#contact" {% if is_home %}data-scroll{% endif %} data-i18n="nav.contact">Contact</a></li>
       </ul>
 
       <div class="lang-switch" role="group" aria-label="Language switcher">
