@@ -627,6 +627,12 @@ section[id],
   }
 }
 
+.contact-card-static:hover {
+  transform: none;
+  border-color: #e4e8ef;
+  box-shadow: none;
+}
+
 .contact-card-icon {
   width: 44px;
   height: 44px;

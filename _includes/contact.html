@@ -17,6 +17,20 @@
       <span class="contact-card-value">{{ site.email }}</span>
     </span>
   </a>
+  <a class="contact-card" href="mailto:{{ site.university_email }}">
+    <span class="contact-card-icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+    <span class="contact-card-body">
+      <span class="contact-card-label" data-i18n="contact.univ_mail.label">Email universitaire</span>
+      <span class="contact-card-value">{{ site.university_email }}</span>
+    </span>
+  </a>
+  <a class="contact-card" target="_blank" rel="noopener noreferrer" href="https://github.com/{{ site.github_username }}">
+    <span class="contact-card-icon"><i class="fa fa-github" aria-hidden="true"></i></span>
+    <span class="contact-card-body">
+      <span class="contact-card-label" data-i18n="contact.github.label">GitHub</span>
+      <span class="contact-card-value">github.com/{{ site.github_username }}</span>
+    </span>
+  </a>
   <a class="contact-card" target="_blank" rel="noopener noreferrer" href="{{ site.gitlab_url }}">
     <span class="contact-card-icon"><i class="fa fa-gitlab" aria-hidden="true"></i></span>
     <span class="contact-card-body">
@@ -31,4 +45,11 @@
       <span class="contact-card-value">minh-son-cong-275577387</span>
     </span>
   </a>
+  <div class="contact-card contact-card-static">
+    <span class="contact-card-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+    <span class="contact-card-body">
+      <span class="contact-card-label" data-i18n="contact.address.label">Adresse</span>
+      <span class="contact-card-value">{{ site.address }}</span>
+    </span>
+  </div>
 </div>

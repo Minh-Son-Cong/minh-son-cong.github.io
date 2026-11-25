@@ -644,6 +644,12 @@ section[id],
   box-shadow: 0 6px 18px rgba(26, 34, 44, 0.08);
 }
 
+.contact-card-static:hover {
+  transform: none;
+  border-color: #e4e8ef;
+  box-shadow: none;
+}
+
 .contact-card-icon {
   width: 44px;
   height: 44px;
