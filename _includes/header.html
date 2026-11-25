@@ -4,9 +4,15 @@
         <span class="site-title">{{ site.username }}</span>
         <span class="site-description" data-i18n="hero.subtitle">{{ site.user_title }}</span>
       </h1>
-      <div class="header-icons">
-        <a aria-label="Envoyer un email" href="mailto:{{ site.email }}"><i class="icon fa fa-envelope" aria-hidden="true"></i></a>
-        <a aria-label="Mon GitHub" target="_blank" rel="noopener noreferrer" href="https://github.com/{{ site.github_username }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+      <div class="header-cta">
+        <a class="hero-btn hero-btn-primary" href="{{ site.cv_path | prepend: site.baseurl }}" download="CV_Minh-Son_CONG.pdf">
+          <i class="fa fa-download" aria-hidden="true"></i>
+          <span data-i18n="hero.cv">Mon CV</span>
+        </a>
+        <a class="hero-btn hero-btn-outline" href="#contact" data-scroll>
+          <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          <span data-i18n="hero.contact">Me contacter</span>
+        </a>
       </div>
       <div class="header-links">
         <a class="link" href="#about" data-scroll data-i18n="hero.about">À propos</a>

@@ -9,7 +9,11 @@ username: Minh-Son CONG
 user_description: Étudiant en deuxième année de BUT Informatique à l’IUT de Lille, spécialisé dans le déploiement d’applications communicantes et sécurisées. Je possède des compétences en administration de systèmes Linux, gestion de bases de données, utilisation de Git et Docker, ainsi qu’en conception et développement d’applications, notamment en Java. Passionné par le DevOps, l’administration systèmes et les réseaux, je recherche un stage de 8 à 10 semaines à partir du 5 avril 2027.
 user_title: Développeur - Étudiant en BUT Informatique - Parcours DACS
 email: duson3614@gmail.com
+phone: "+33 7 49 27 1311"
 github_username: Minh-Son-Cong
+gitlab_url: "https://gitlab.univ-lille.fr/minh-son.cong.etu"
+linkedin_url: "https://www.linkedin.com/in/minh-son-cong-275577387/"
+cv_path: "/assets/cv/CV_Minh-Son_CONG.pdf"
 
 # Google-analytics
 google-analytics:
