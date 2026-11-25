@@ -1,5 +1,11 @@
 <div class="user-details">
   <h2 class="section-title" data-i18n="about.title">À propos</h2>
-  <p data-i18n="about.description">{{ site.user_description }}</p>
-  <p data-i18n="about.focus">Actuellement en formation, je conçois, déploie et sécurise des applications et infrastructures réseau fiables, tout en explorant l'automatisation et le développement full-stack.</p>
+</div>
+<div class="about-layout">
+  <div class="about-photo">
+    <img src="{{ "/assets/img/profile.jpg" | prepend: site.baseurl }}" alt="Photo de Minh-Son CONG" />
+  </div>
+  <div class="about-text">
+    <p data-i18n="about.description">{{ site.user_description }}</p>
+  </div>
 </div>
