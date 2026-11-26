@@ -578,10 +578,74 @@ section[id],
   border-radius: 999px;
 }
 
+.user-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 28px auto;
+  width: 100%;
+
+  .contents,
+  .contents-right,
+  .images-left,
+  .images-right {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  .contents h3,
+  .contents-right h3 {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .images-left img,
+  .images-right img {
+    float: none;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #e4e8ef;
+    box-shadow: 0 6px 18px rgba(26, 34, 44, 0.08);
+    background: #fff;
+  }
+
+  @media only screen and (min-width: $cut) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    margin: 36px auto;
+
+    .contents,
+    .contents-right,
+    .images-left,
+    .images-right {
+      width: 48%;
+    }
+
+    .contents {
+      order: 1;
+    }
+
+    .images-right {
+      order: 2;
+    }
+
+    .images-left {
+      order: 1;
+    }
+
+    .contents-right {
+      order: 2;
+    }
+  }
+}
+
 .user-projects::after {
-  content: "";
-  display: table;
-  clear: both;
+  content: none;
 }
 
 .interests-grid .interest-icon {
@@ -870,6 +934,12 @@ section[id],
     object-fit: cover;
     object-position: center;
     background: #fff;
+  }
+
+  &.project-figure-contain img {
+    object-fit: contain;
+    padding: 8px;
+    box-sizing: border-box;
   }
 
   figcaption {
